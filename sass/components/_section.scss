@@ -1,12 +1,35 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &--with-bgcolor {
     background-color: var(--bg-secondary-color);
   }
+}
 
-  &--no-padding-top {
+.section--no-padding-top {
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 0px;
     padding-bottom: 94px;
   }

@@ -31,6 +31,11 @@
 .adress-footer {
   margin-top: 20px;
 
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
   &__street {
     color: var(--primary-bg-color);
     font-style: normal;

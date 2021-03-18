@@ -4,13 +4,20 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
 }
 
 .connect-foother {
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
   color: var(--primary-bg-color);
   font-weight: 700;
   font-size: 14px;
