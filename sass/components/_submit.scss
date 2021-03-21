@@ -3,10 +3,28 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-top: 20px;
   }
 
   &__placeholder {
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 767px) {
+      display: block;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+      margin-right: 15px;
+    }
+
     font-family: inherit;
     font-size: 16px;
     line-height: 1.25;
@@ -17,8 +35,6 @@
     min-height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-
-    margin-right: 15px;
   }
 }
 
@@ -28,6 +44,17 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
   }
   position: relative;
   width: 200px;
@@ -48,5 +75,23 @@
     right: 28px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.foter-tablet__submit {
+  @media screen and (max-width: 768px) {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 0px;
   }
 }
