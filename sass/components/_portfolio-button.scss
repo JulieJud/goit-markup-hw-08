@@ -25,9 +25,24 @@
   margin-right: 8px;
 }
 
+.portfolio-button__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+}
+
 .portfolio-button__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-  align-items: flex-start;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: -8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
