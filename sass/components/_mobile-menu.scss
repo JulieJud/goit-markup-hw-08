@@ -54,18 +54,6 @@
   margin: 0;
   list-style: none;
 
-  &__link {
-    display: block;
-    padding: 10px;
-    color: var(--title-color);
-    text-decoration: none;
-    margin-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-  }
-
   &__link:hover,
   &__link:focus {
     color: var(--accent-color);
@@ -94,6 +82,18 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+&__link {
+  display: block;
+  padding: 10px;
+  color: red;
+
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
 }
 
 .adress__link {

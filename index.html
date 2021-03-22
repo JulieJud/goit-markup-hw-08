@@ -145,7 +145,11 @@
         <ul class="examples__list list">
             <li class="examples__item"> 
                 <div class="examples__product-thumb">
-                <img src="images/box1.jpg" width="370" height="294" alt="кисти рук печатающие код">
+                <img 
+                 srcset="
+                ./images/box1.jpg 1x, 
+                ./images/box12x.jpg 2x"
+                src="./images/box1.jpg" alt="кисти рук печатающие код">
                 <p class="examples__text">
                     Десктопные приложения
 
@@ -154,7 +158,11 @@
             </li>
             <li class="examples__item">
                 <div class="examples__product-thumb">
-                <img  src="images/box2.jpg" width="370" height="294" alt="показывает поддержку мобильных приложений">
+                <img  
+                 srcset="
+                ./images/box2.jpg 1x, 
+                ./images/box22x.jpg 2x"
+                src="./images/box2.jpg" alt="показывает поддержку мобильных приложений">
                 <p class="examples__text">
                     Мобильные приложения
                 </p>
@@ -165,7 +173,8 @@
                 <img 
                 srcset="
                 ./images/box3.jpg 1x, 
-                ./images/ " width="370" height="294" alt="палитра цветов">
+                ./images/box32x.jpg 2x"
+                src="./images/box3.jpg"  alt="палитра цветов">
                 <p class="examples__text">
                     Дизайнерские решения
                 </p>
@@ -182,7 +191,11 @@
         <h2 class="members__title">Наша команда</h2>
         <ul class="members__list list">
             <li class="members__item">
-               <!-- <img src="images/demjanchenko.jpg" width="270" height="260" alt="фото члена команды Демьянченко">-->
+                <img 
+                 srcset="
+                ./images/demjanchenko 1x, 
+                ./images/demjanchenko2x.jpg 2x"
+                src="./images/demjanchenko.jpg"  alt="фото члена команды Демьянченко">
                 <div class="members__card">
                 <h3 class="members__name">Игорь Демьяненко</h3>
                 <p class="members__position">Product Designer</p>
@@ -225,7 +238,11 @@
             </li>
         
             <li class="members__item">
-                <!--<img src="images/repina.jpg" width="270" height="260" alt="фото члена команды Репина">-->
+                <img 
+                 srcset="
+                ./images/repina.jpg 1x, 
+                ./images/repina2x.jpg 2x"
+                src="./images/repina.jpg"  alt="фото члена команды Репина">
                 <div class="members__card">
                 <h3 class="members__name">Ольга Репина</h3>
                 <p class="members__position">Frontend Developer</p>
@@ -267,7 +284,11 @@
 
             </li>
             <li class="members__item">
-               <!-- <img src="images/tarasov.jpg" width="270" height="260" alt="фото члена команды Тарасов">-->
+                <img 
+                 srcset="
+                ./images/tarasov.jpg 1x, 
+                ./images/tarasov2x.jpg 2x"
+                src="./images/tarasov.jpg"  alt="фото члена команды Тарасов">
                 <div class="members__card">
                 <h3 class="members__name">Николай Тарасов</h3>
                 <p class="members__position">Marketing</p>
@@ -309,7 +330,12 @@
 
             </li>
             <li class="members__item">
-              <!-- <img src="images/ermakov.jpg" width="270"  height="260" alt="фото члена команды Ермаков">-->
+              <img
+               srcset="
+                ./images/ermakov.jpg 1x, 
+                ./images/ermakov2x.jpg 2x"
+              src="images/ermakov.jpg"
+               alt="фото члена команды Ермаков">
                 <div class="members__card">
                 <h3 class="members__name">Михаил Ермаков</h3>
                 <p class="members__position">UI Designer</p>
@@ -506,7 +532,7 @@
     
         <ul class="mobile-menu">
             <li class="mobile-menu__item">
-                <a href="./index.html" class="mobile-menu__link mobile-menu__link--curren">Студия</a>
+                <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a>
             </li>
             <li class="mobile-menu__item">
                 <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
