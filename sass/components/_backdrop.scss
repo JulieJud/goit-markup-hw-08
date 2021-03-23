@@ -7,6 +7,7 @@
   height: 100%;
   opacity: 1;
   transition: opacity 250ms var(--cubic);
+  overflow-y: scroll;
 }
 
 .is-hidden {
