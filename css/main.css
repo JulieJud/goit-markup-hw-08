@@ -385,6 +385,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-y: scroll;
 }
 
 .menu-container.is-open {
@@ -440,11 +441,14 @@ img {
   padding: 10px;
   color: var(--title-color);
   text-decoration: none;
-  margin-bottom: 32px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
+}
+
+.mobile-menu__link:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu__link--current {
@@ -497,7 +501,7 @@ img {
   font-size: 34px;
   line-height: 1.176;
   margin-bottom: 32px;
-  margin-top: 100px;
+  margin-top: 302px;
 }
 
 .adress__link--grey {
