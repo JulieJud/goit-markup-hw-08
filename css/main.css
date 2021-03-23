@@ -68,13 +68,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1092,7 +1092,7 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .connect-foother {
     display: block;
     text-align: center;
@@ -1466,6 +1466,7 @@ img {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    min-width: 450px;
   }
 }
 
@@ -1473,6 +1474,7 @@ img {
   .submit-form__placeholder {
     margin-top: 0px;
     margin-right: 15px;
+    min-width: 358px;
   }
 }
 
