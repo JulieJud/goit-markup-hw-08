@@ -2,8 +2,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 528px;
-  max-width: 581px;
+
   padding: 40px;
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -13,13 +12,17 @@
   transition: transform 250ms var(--cubic);
 
   @media screen and (min-width: 1200px) {
-    min-height: 581px;
-    max-width: 528px;
+    min-height: 528px;
+    min-width: 581px;
   }
 
-  @media screen and (min-width: 768px) {
-    min-height: 609px;
-    max-width: 450px;
+  @media screen and (min-width: 480px) {
+    min-height: 528px;
+    width: 450px;
+  }
+
+  @media screen and (max-width: 479px) {
+    min-width: 100%;
   }
 
   &__name {
