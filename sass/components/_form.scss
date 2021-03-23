@@ -38,3 +38,7 @@
     line-height: 1.16;
   }
 }
+
+.wrapper__input:focus + .form-field__label {
+  color: var(--accent-color);
+}
