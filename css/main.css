@@ -822,8 +822,17 @@ img {
   line-height: 1.16;
 }
 
+@media screen and (max-width: 767px) {
+  .form-field:hover .form-field__label,
+  .form-field:focus .form-field__label {
+    color: var(--accent-color);
+  }
+}
+
 .checkbox {
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,8 +842,18 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+}
+
+.checkbox__accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .checkbox__input {
@@ -861,19 +880,46 @@ img {
 
 .checkbox__agreement {
   color: var(--accent-color);
-  margin-left: 2px;
   font-family: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+}
+
+@media screen and (min-width: 1200) {
+  .checkbox__agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 480) {
+  .checkbox__agreement {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox__text--agree {
   font-family: inherit;
-  font-size: 14px;
-  line-height: 1.714;
-  margin-left: 9px;
-  margin-right: 2px;
+}
+
+@media screen and (min-width: 1200) {
+  .checkbox__text--agree {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 480) {
+  .checkbox__text--agree {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .checkbox__text--agree {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -1587,5 +1633,118 @@ img {
 
 .wrapper__input:focus + .wrapper__icon {
   fill: var(--accent-color);
+}
+
+.hero {
+  text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@1x-480.jpg);
+  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@1x-480.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .hero {
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@2x-480.jpg);
+    background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@2x-480.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@1x-768.jpg);
+    background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@1x-768.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@2x-768.jpg);
+    background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@2x-768.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@1x-1600.jpg);
+    background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@1x-1600.jpg);
+    background-size: 1600px 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url(../images/hero-bg@2x-1600.jpg);
+    background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url(../images/hero-bg@2x-1600.jpg);
+  }
+}
+
+.hero__title {
+  color: var(--primary-bg-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.615;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border: transparent;
+  -webkit-transition: background-color 250ms var(--cubic), color 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+}
+
+@media screen and (min-width: 480px) {
+  .hero__button {
+    margin-bottom: 118px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

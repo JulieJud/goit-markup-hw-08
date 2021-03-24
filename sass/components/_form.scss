@@ -39,6 +39,9 @@
   }
 }
 
-.wrapper__input:focus + .form-field__label {
-  color: var(--accent-color);
+.form-field:hover .form-field__label,
+.form-field:focus .form-field__label {
+  @media screen and(max-width: 767px) {
+    color: var(--accent-color);
+  }
 }
