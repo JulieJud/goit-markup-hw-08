@@ -63,7 +63,7 @@
     color: var(--title-color);
     text-decoration: none;
 
-    font-family: Roboto;
+    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
@@ -93,7 +93,7 @@
     color: var(--accent-color);
     text-decoration: none;
 
-    font-family: Roboto;
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -115,7 +115,7 @@
 
   &--blue {
     color: var(--accent-color);
-    font-family: Roboto;
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -123,8 +123,9 @@
     margin-bottom: 32px;
     margin-top: 302px;
   }
+
   &--grey {
-    font-family: Roboto;
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 24px;

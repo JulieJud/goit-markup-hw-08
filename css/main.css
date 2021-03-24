@@ -12,7 +12,7 @@ html {
 
 body {
   color: var(--primary-text-color);
-  font-family: roboto, sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -55,6 +55,8 @@ img {
   --closed-border: rgba(0, 0, 0, 0.1);
   --modal-border: rgba(33, 33, 33, 0.2);
   --placeholder: rgba(117, 117, 117, 0.5);
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -328,7 +330,7 @@ img {
 
 .logo {
   text-decoration: none;
-  font-family: raleway, cursive;
+  font-family: var(--secondary-font-family);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -441,7 +443,7 @@ img {
   padding: 10px;
   color: var(--title-color);
   text-decoration: none;
-  font-family: Roboto;
+  font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -474,7 +476,7 @@ img {
   padding-bottom: 10px;
   color: var(--accent-color);
   text-decoration: none;
-  font-family: Roboto;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -495,7 +497,7 @@ img {
 
 .adress__link--blue {
   color: var(--accent-color);
-  font-family: Roboto;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -505,7 +507,7 @@ img {
 }
 
 .adress__link--grey {
-  font-family: Roboto;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
