@@ -498,8 +498,18 @@
                         <label class="form-field__label" for="comment">Kомментарий</label>
                         <textarea class="form-field__comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
                     </div>
+                    <div class="form-agreement">
+                        <label class="form-agreement__accept">
+                            <input class="checkbox" type="checkbox" name="agreement" value="agreement">
                     
-                    <div class="checkbox">
+                            <svg class="check-icon">
+                                <use href="./images/icons.svg#icon-icon-check"></use>
+                            </svg>
+                            <span class="check-agreem">Соглашаюсь с рассылкой и принимаю</span> <a href="" class="customer-agreem">Условия
+                                договора</a>
+                        </label>
+                    </div>
+                   <!-- <div class="checkbox">
                         <label class="checkbox__accept" for="policy">
                                 <input class="checkbox__input" type="checkbox" name="policy" id="policy" />
                                 <svg class="checkbox__icon" width="16">
@@ -513,7 +523,7 @@
                         
                         </label>
                     
-                    </div>
+                    </div>-->
                     
                     <button class="submit-modal" type="submit">Отправить</button>
                     </form>
