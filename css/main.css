@@ -949,7 +949,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form-agreement {
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -991,12 +990,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .form-agreement__accept {
-    margin-left: 12px;
-  }
 }
 
 .check-agreem {
@@ -1093,7 +1086,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
+    min-width: 528px;
   }
 }
 
