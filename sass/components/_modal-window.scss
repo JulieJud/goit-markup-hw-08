@@ -12,17 +12,12 @@
   transition: transform 250ms var(--cubic);
 
   @media screen and (min-width: 1200px) {
-    min-height: 528px;
-    min-width: 581px;
+    max-width: 528px;
   }
 
-  @media screen and (min-width: 480px) {
-    min-height: 528px;
-    width: 450px;
-  }
-
-  @media screen and (max-width: 479px) {
-    min-width: 100%;
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    width: 100%;
+    max-width: 450px;
   }
 
   &__name {
