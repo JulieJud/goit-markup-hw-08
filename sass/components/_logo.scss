@@ -7,9 +7,14 @@
   margin-right: 93px;
 
   &__footer {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px), (min-width: 768px) {
       display: block;
       text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: left;
     }
     margin-right: 0;
   }

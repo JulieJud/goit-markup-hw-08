@@ -62,9 +62,14 @@
 .adress-footer {
   margin-top: 20px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px), (min-width: 768px) {
     display: block;
     text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: left;
   }
 
   &__street {
