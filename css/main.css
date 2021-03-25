@@ -366,10 +366,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-right: 83px;
-  padding-bottom: 38px;
-  padding-left: 40px;
+  padding: 48px 40px;
   background-color: white;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -522,6 +519,20 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1012,6 +1023,12 @@ img {
   transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
 }
 
+@media screen and (max-width: 320px) {
+  .modal {
+    padding: 29px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
@@ -1032,6 +1049,12 @@ img {
   text-align: center;
   color: var(--title-color);
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 320px) {
+  .modal__name {
+    font-size: 15px;
+  }
 }
 
 .modal__button--closed {
@@ -1056,6 +1079,13 @@ img {
           align-items: center;
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
+}
+
+@media screen and (max-width: 320px) {
+  .modal__button--closed {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .modal__button--closed:hover, .modal__button--closed:focus {
