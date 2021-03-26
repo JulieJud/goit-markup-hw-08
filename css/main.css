@@ -790,7 +790,7 @@ img {
 
 .main-client__item {
   height: 90px;
-  min-width: 170px;
+  width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
